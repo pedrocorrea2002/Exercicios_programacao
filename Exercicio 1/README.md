@@ -5,3 +5,5 @@
   - Reprovado (Média menor que 4);
   - Recuperação (Média entre 4 e 6);
   - Aprovado (Média maior que 6).
+
+### EXEMPLO:
