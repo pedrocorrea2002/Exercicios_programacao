@@ -1,13 +1,17 @@
 num = 0
 lista = {}
-
+mediaIdades = 0
+-------------------------------------------------------
+-- LEITURA DAS INFORMAÇÕES
+-------------------------------------------------------
 while(num < 3) do
   io.write("Escreva o nome de um aluno: ")
   nomeAluno = io.read("*l")
   io.close()
   
   io.write("Escreva a idade do aluno ",nomeAluno,": ")
-  idadeAluno = io.read("*l")
+  idadeAluno = tonumber(io.read("*l"))
+  mediaIdades = mediaIdades + idadeAluno
   io.close()
   print("")
 
@@ -25,9 +29,15 @@ while(num < 3) do
 
   num = num + 1
 end
-
+---------------------------------------------------------
+-- CÁLCULO E IMPRESSÃO DA MÉDIA DA IDADE DOS ALUNOS
+-------------------------------------------------------
+rounded_age = math.ceil((mediaIdades*10)/3)/10
+print("Média das idades dos alunos: "..rounded_age)
 print("")
-
+---------------------------------------------------------
+-- CÁLCULO DA MÉDIA E IMPRESSÃO DAS INFORMAÇÕES DOS ALUNOS
+-------------------------------------------------------
 for k, v in pairs(lista) do
   print("Nome: "..v.nome,"Idade: "..v.idade)
   rounded_media = math.ceil(v.media)/10
