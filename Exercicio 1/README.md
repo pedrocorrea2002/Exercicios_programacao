@@ -7,3 +7,5 @@
   - Aprovado (Média maior que 6).
 
 ### EXEMPLO:
+
+![alt text](https://github.com/pedrocorrea2002/Exercicios_programacao/blob/main/Exercicio%201/example.png?raw=true)
