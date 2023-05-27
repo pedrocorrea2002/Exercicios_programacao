@@ -8,4 +8,4 @@
 
 ### EXEMPLO:
 
-![alt text](https://github.com/pedrocorrea2002/Exercicios_programacao/blob/main/Exercicio%201/output_example.png?raw=true)
+![alt text](https://github.com/pedrocorrea2002/Exercicios_programacao/blob/main/Exercicio%201/output_example.gif?raw=true)
