@@ -1,17 +1,18 @@
+answer = ""
 num = 0
 lista = {}
-mediaIdades = 0
+totalIdades = 0
 -------------------------------------------------------
 -- LEITURA DAS INFORMAÇÕES
 -------------------------------------------------------
-while(num < 3) do
+while(answer ~= "N") do
   io.write("Escreva o nome de um aluno: ")
   nomeAluno = io.read("*l")
   io.close()
   
   io.write("Escreva a idade do aluno ",nomeAluno,": ")
   idadeAluno = tonumber(io.read("*l"))
-  mediaIdades = mediaIdades + idadeAluno
+  totalIdades = totalIdades + idadeAluno
   io.close()
   print("")
 
@@ -28,11 +29,21 @@ while(num < 3) do
   table.insert(lista,{nome=nomeAluno;idade=idadeAluno;media=notaTotalAluno/4})
 
   num = num + 1
+
+  io.write("Deseja inserir mais algum aluno? (S/N) ")
+  answer = io.read("*l")
+  io.close()
 end
 ---------------------------------------------------------
 -- CÁLCULO E IMPRESSÃO DA MÉDIA DA IDADE DOS ALUNOS
--------------------------------------------------------
-rounded_age = math.ceil((mediaIdades*10)/3)/10
+---------------------------------------------------------
+print("")
+print("========================")
+print("||       RESUMO       ||")
+print("========================")
+print("")
+
+rounded_age = math.ceil((totalIdades*10)/num)/10
 print("Média das idades dos alunos: "..rounded_age)
 print("")
 ---------------------------------------------------------
